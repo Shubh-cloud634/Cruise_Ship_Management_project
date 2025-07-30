@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voyager Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg">
+  <div class="glass-card">
+    <h2>Welcome Voyager</h2>
+    <ul>
+      <li><a href="catering.html">Order Catering</a></li>
+      <li><a href="stationery.html">Order Stationery</a></li>
+      <li><a href="resort.html">Book Resort & Movie</a></li>
+      <li><a href="fitness.html">Book Fitness</a></li>
+      <li><a href="party.html">Book Party Hall</a></li>
+    </ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <script type="module" src="firebase.js"></script>
+  <script>
+    import { auth } from "./firebase.js";
+    import { signOut } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+    window.logout = () => signOut(auth).then(() => window.location.href = "index.html");
+  </script>
+</body>
+</html>

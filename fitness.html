@@ -1,0 +1,26 @@
+<!-- fitness.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Center Booking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg">
+  <div class="glass-card">
+    <h2>Book Fitness Center</h2>
+    <form id="fitnessForm">
+      <label>Equipment Name:</label><br>
+      <input type="text" name="equipment" placeholder="e.g., Treadmill" required><br><br>
+
+      <label>Preferred Time Slot:</label><br>
+      <input type="time" name="time" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="js/fitness.js"></script>
+</body>
+</html>

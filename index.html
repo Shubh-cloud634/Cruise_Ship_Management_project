@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cruise Ship Management - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg">
+  <div class="glass-card">
+    <h2>Login</h2>
+
+    <select id="roleSelect" required>
+      <option value="">-- Select Role --</option>
+      <option value="voyager">Voyager</option>
+      <option value="admin">Admin</option>
+      <option value="manager">Manager</option>
+      <option value="headcook">Head Cook</option>
+      <option value="supervisor">Supervisor</option>
+    </select><br><br>
+
+    <input type="email" id="email" placeholder="Email" required><br><br>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="js/main-login.js"></script>
+</body>
+</html>

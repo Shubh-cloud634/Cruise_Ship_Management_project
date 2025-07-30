@@ -1,0 +1,30 @@
+<!-- party.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Party Hall</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg">
+  <div class="glass-card">
+    <h2>Book Party Hall</h2>
+    <form id="partyForm">
+      <label>Select Party Type:</label><br>
+      <select name="partyType" required>
+        <option value="">--Select Party Type--</option>
+        <option value="Birthday">Birthday Party</option>
+        <option value="Wedding">Wedding Party</option>
+        <option value="Engagement">Engagement Party</option>
+        <option value="Business">Business Party</option>
+        <option value="Get-together">Get-Together Party</option>
+      </select><br><br>
+
+      <button type="submit">Book Hall</button>
+    </form>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="js/party.js"></script>
+</body>
+</html>

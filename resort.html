@@ -1,0 +1,32 @@
+<!-- resort.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Resort & Movie</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg">
+  <div class="glass-card">
+    <h2>Book Resort & Movie</h2>
+    <form id="resortForm">
+      <label>Choose View:</label><br>
+      <select name="resortType" required>
+        <option value="">--Select View--</option>
+        <option value="Ocean View">Ocean View</option>
+        <option value="Balcony View">Balcony View</option>
+        <option value="Corridor View">Corridor View</option>
+        <option value="Lounge">Lounge</option>
+      </select><br><br>
+
+      <label>Movie Title:</label><br>
+      <input type="text" name="movieTitle" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="js/resort.js"></script>
+</body>
+</html>
