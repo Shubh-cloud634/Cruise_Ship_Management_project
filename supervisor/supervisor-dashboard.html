@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Supervisor Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg">
+  <div class="glass-card">
+    <h2>Welcome Supervisor</h2>
+    <h3>Stationery Orders</h3>
+    <ul id="stationeryList"></ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <script type="module" src="../firebase.js"></script>
+  <script>
+    import { auth } from "../firebase.js";
+    import { signOut } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+    window.logout = () => signOut(auth).then(() => window.location.href = "../index.html");
+  </script>
+</body>
+</html>
